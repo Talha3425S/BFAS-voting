@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-06T06:28:24.724Z",
+  "channelName": "landregistry",
+  "connectionProfile": "C:\\Users\\Dell\\pioneer-blockchain-framework\\backend\\connection-plra.json",
+  "imported": [
+    {
+      "orgName": "Org1",
+      "identityAlias": "org1-admin",
+      "mspId": "Org1MSP"
+    },
+    {
+      "orgName": "Org2",
+      "identityAlias": "org2-admin",
+      "mspId": "Org2MSP"
+    }
+  ]
+}
