@@ -1,0 +1,88 @@
+{
+  "name": "plra-local-ha",
+  "version": "1.0.0",
+  "client": {
+    "organization": "Org1",
+    "connection": {
+      "timeout": {
+        "peer": {
+          "endorser": "300"
+        },
+        "orderer": "300"
+      }
+    }
+  },
+  "organizations": {
+    "Org1": {
+      "mspid": "Org1MSP",
+      "peers": [
+        "peer0.org1.example.com",
+        "peer1.org1.example.com",
+        "peer2.org1.example.com"
+      ]
+    },
+    "Org2": {
+      "mspid": "Org2MSP",
+      "peers": [
+        "peer0.org2.example.com",
+        "peer1.org2.example.com"
+      ]
+    },
+    "OrdererOrg": {
+      "mspid": "OrdererMSP",
+      "orderers": [
+        "orderer.example.com",
+        "orderer2.example.com",
+        "orderer3.example.com"
+      ]
+    }
+  },
+  "peers": {
+    "peer0.org1.example.com": {
+      "url": "grpcs://127.0.0.1:7051",
+      "metadata": {
+        "nodeId": "LRO_NODE_1",
+        "city": "Lahore"
+      }
+    },
+    "peer1.org1.example.com": {
+      "url": "grpcs://127.0.0.1:8051",
+      "metadata": {
+        "nodeId": "LRO_NODE_2",
+        "city": "Rawalpindi"
+      }
+    },
+    "peer2.org1.example.com": {
+      "url": "grpcs://127.0.0.1:19051",
+      "metadata": {
+        "nodeId": "LRO_NODE_3",
+        "city": "Faisalabad"
+      }
+    },
+    "peer0.org2.example.com": {
+      "url": "grpcs://127.0.0.1:12051",
+      "metadata": {
+        "nodeId": "LRO_NODE_4",
+        "city": "Multan"
+      }
+    },
+    "peer1.org2.example.com": {
+      "url": "grpcs://127.0.0.1:13051",
+      "metadata": {
+        "nodeId": "LRO_NODE_5",
+        "city": "Gujranwala"
+      }
+    }
+  },
+  "orderers": {
+    "orderer.example.com": {
+      "url": "grpcs://127.0.0.1:7050"
+    },
+    "orderer2.example.com": {
+      "url": "grpcs://127.0.0.1:8050"
+    },
+    "orderer3.example.com": {
+      "url": "grpcs://127.0.0.1:9050"
+    }
+  }
+}
